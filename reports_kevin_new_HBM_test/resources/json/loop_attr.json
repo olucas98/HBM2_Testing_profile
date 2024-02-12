@@ -1,0 +1,2567 @@
+{
+  "name":"loop_attributes"
+  , "id":1013
+  , "nodes":
+  [
+    {
+      "name":"ConsumerKernel<0>"
+      , "id":32
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<0>.B0"
+          , "id":126
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<0>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<0>.B1"
+          , "id":127
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<0>.B2"
+          , "id":128
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<10>"
+      , "id":22
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<10>.B0"
+          , "id":96
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<10>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<10>.B1"
+          , "id":97
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<10>.B2"
+          , "id":98
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<11>"
+      , "id":21
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<11>.B0"
+          , "id":93
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<11>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<11>.B1"
+          , "id":94
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<11>.B2"
+          , "id":95
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<12>"
+      , "id":20
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<12>.B0"
+          , "id":90
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<12>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<12>.B1"
+          , "id":91
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<12>.B2"
+          , "id":92
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<13>"
+      , "id":19
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<13>.B0"
+          , "id":87
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<13>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<13>.B1"
+          , "id":88
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<13>.B2"
+          , "id":89
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<14>"
+      , "id":18
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<14>.B0"
+          , "id":84
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<14>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<14>.B1"
+          , "id":85
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<14>.B2"
+          , "id":86
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<15>"
+      , "id":17
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<15>.B0"
+          , "id":81
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<15>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<15>.B1"
+          , "id":82
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<15>.B2"
+          , "id":83
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<16>"
+      , "id":16
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<16>.B0"
+          , "id":78
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<16>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<16>.B1"
+          , "id":79
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<16>.B2"
+          , "id":80
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<17>"
+      , "id":15
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<17>.B0"
+          , "id":75
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<17>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<17>.B1"
+          , "id":76
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<17>.B2"
+          , "id":77
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<18>"
+      , "id":14
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<18>.B0"
+          , "id":72
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<18>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<18>.B1"
+          , "id":73
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<18>.B2"
+          , "id":74
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<19>"
+      , "id":13
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<19>.B0"
+          , "id":69
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<19>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<19>.B1"
+          , "id":70
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<19>.B2"
+          , "id":71
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<1>"
+      , "id":31
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<1>.B0"
+          , "id":123
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<1>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<1>.B1"
+          , "id":124
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<1>.B2"
+          , "id":125
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<20>"
+      , "id":12
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<20>.B0"
+          , "id":66
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<20>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<20>.B1"
+          , "id":67
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<20>.B2"
+          , "id":68
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<21>"
+      , "id":11
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<21>.B0"
+          , "id":63
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<21>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<21>.B1"
+          , "id":64
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<21>.B2"
+          , "id":65
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<22>"
+      , "id":10
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<22>.B0"
+          , "id":60
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<22>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<22>.B1"
+          , "id":61
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<22>.B2"
+          , "id":62
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<23>"
+      , "id":9
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<23>.B0"
+          , "id":57
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<23>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<23>.B1"
+          , "id":58
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<23>.B2"
+          , "id":59
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<24>"
+      , "id":8
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<24>.B0"
+          , "id":54
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<24>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<24>.B1"
+          , "id":55
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<24>.B2"
+          , "id":56
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<25>"
+      , "id":7
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<25>.B0"
+          , "id":51
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<25>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<25>.B1"
+          , "id":52
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<25>.B2"
+          , "id":53
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<26>"
+      , "id":6
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<26>.B0"
+          , "id":48
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<26>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<26>.B1"
+          , "id":49
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<26>.B2"
+          , "id":50
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<27>"
+      , "id":5
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<27>.B0"
+          , "id":45
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<27>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<27>.B1"
+          , "id":46
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<27>.B2"
+          , "id":47
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<28>"
+      , "id":4
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<28>.B0"
+          , "id":42
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<28>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<28>.B1"
+          , "id":43
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<28>.B2"
+          , "id":44
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<29>"
+      , "id":3
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<29>.B0"
+          , "id":39
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<29>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<29>.B1"
+          , "id":40
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<29>.B2"
+          , "id":41
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<2>"
+      , "id":30
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<2>.B0"
+          , "id":120
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<2>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<2>.B1"
+          , "id":121
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<2>.B2"
+          , "id":122
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<30>"
+      , "id":2
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<30>.B0"
+          , "id":36
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<30>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<30>.B1"
+          , "id":37
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<30>.B2"
+          , "id":38
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<31>"
+      , "id":1
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<31>.B0"
+          , "id":33
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<31>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<31>.B1"
+          , "id":34
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<31>.B2"
+          , "id":35
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<3>"
+      , "id":29
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<3>.B0"
+          , "id":117
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<3>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<3>.B1"
+          , "id":118
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<3>.B2"
+          , "id":119
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<4>"
+      , "id":28
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<4>.B0"
+          , "id":114
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<4>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<4>.B1"
+          , "id":115
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<4>.B2"
+          , "id":116
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<5>"
+      , "id":27
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<5>.B0"
+          , "id":111
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<5>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<5>.B1"
+          , "id":112
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<5>.B2"
+          , "id":113
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<6>"
+      , "id":26
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<6>.B0"
+          , "id":108
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<6>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<6>.B1"
+          , "id":109
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<6>.B2"
+          , "id":110
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<7>"
+      , "id":25
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<7>.B0"
+          , "id":105
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<7>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<7>.B1"
+          , "id":106
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<7>.B2"
+          , "id":107
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<8>"
+      , "id":24
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<8>.B0"
+          , "id":102
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<8>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<8>.B1"
+          , "id":103
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<8>.B2"
+          , "id":104
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<9>"
+      , "id":23
+      , "clk":"No"
+      , "fmax":"480.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<9>.B0"
+          , "id":99
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"2.000000"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "limiter":"1"
+          , "ld":"2"
+          , "le":"ConsumerKernel<9>.B2"
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerKernel<9>.B1"
+          , "id":100
+          , "af":"480.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Enabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"11.000000"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"15728640"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"ConsumerKernel<9>.B2"
+          , "id":101
+          , "af":"480.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lllt":"1.000000"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+}

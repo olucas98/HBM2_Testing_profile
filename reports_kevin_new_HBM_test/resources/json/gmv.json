@@ -1,0 +1,5246 @@
+{
+  "nodes":
+  [
+    {
+      "name":"HBM0"
+      , "id":1238
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM0 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM0"
+          , "id":1240
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x0"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1239
+      , "parent":"1238"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1241
+      , "parent":"1238"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1242
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1243
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM0"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1244
+      , "parent":"1238"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1245
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM0 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<0>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM1"
+      , "id":1246
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM1 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM1"
+          , "id":1248
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x20000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1247
+      , "parent":"1246"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1249
+      , "parent":"1246"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1250
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1251
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM1"
+              , "Interconnect Style":"ring"
+              , "Writes":"11"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1252
+      , "parent":"1246"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1253
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM1 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<19>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1254
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM1 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<18>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1255
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM1 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<17>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1256
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM1 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<16>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1257
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM1 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<15>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1258
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM1 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<14>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1259
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM1 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<13>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1260
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM1 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<12>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1261
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM1 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<11>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1262
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM1 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<10>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1263
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM1 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<1>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM2"
+      , "id":1264
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM2 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM2"
+          , "id":1266
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x40000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1265
+      , "parent":"1264"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1267
+      , "parent":"1264"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1268
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1269
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM2"
+              , "Interconnect Style":"ring"
+              , "Writes":"11"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1270
+      , "parent":"1264"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1271
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM2 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<29>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1272
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM2 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<28>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1273
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM2 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<27>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1274
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM2 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<26>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1275
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM2 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<25>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1276
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM2 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<24>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1277
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM2 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<23>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1278
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM2 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<22>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1279
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM2 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<21>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1280
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM2 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<20>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1281
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM2 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<2>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM3"
+      , "id":1282
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM3 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM3"
+          , "id":1284
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x60000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1283
+      , "parent":"1282"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1285
+      , "parent":"1282"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1286
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1287
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM3"
+              , "Interconnect Style":"ring"
+              , "Writes":"3"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1288
+      , "parent":"1282"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1289
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM3 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<31>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1290
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM3 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<30>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1291
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM3 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<3>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM4"
+      , "id":1292
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM4 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM4"
+          , "id":1294
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x80000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1293
+      , "parent":"1292"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1295
+      , "parent":"1292"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1296
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1297
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM4"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1298
+      , "parent":"1292"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1299
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM4 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<4>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM5"
+      , "id":1300
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM5 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM5"
+          , "id":1302
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0xa0000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1301
+      , "parent":"1300"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1303
+      , "parent":"1300"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1304
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1305
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM5"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1306
+      , "parent":"1300"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1307
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM5 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<5>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM6"
+      , "id":1308
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM6 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM6"
+          , "id":1310
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0xc0000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1309
+      , "parent":"1308"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1311
+      , "parent":"1308"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1312
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1313
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM6"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1314
+      , "parent":"1308"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1315
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM6 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<6>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM7"
+      , "id":1316
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM7 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM7"
+          , "id":1318
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0xe0000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1317
+      , "parent":"1316"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1319
+      , "parent":"1316"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1320
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1321
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM7"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1322
+      , "parent":"1316"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1323
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM7 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<7>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM8"
+      , "id":1324
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM8 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM8"
+          , "id":1326
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x100000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1325
+      , "parent":"1324"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1327
+      , "parent":"1324"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1328
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1329
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM8"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1330
+      , "parent":"1324"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1331
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM8 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<8>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM9"
+      , "id":1332
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM9 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM9"
+          , "id":1334
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x120000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1333
+      , "parent":"1332"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1335
+      , "parent":"1332"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1336
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1337
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM9"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1338
+      , "parent":"1332"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1339
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM9 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<9>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM10"
+      , "id":1340
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM10 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM10"
+          , "id":1342
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x140000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1341
+      , "parent":"1340"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1343
+      , "parent":"1340"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1344
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1345
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM10"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1346
+      , "parent":"1340"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1347
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM10 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<10>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM11"
+      , "id":1348
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM11 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM11"
+          , "id":1350
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x160000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1349
+      , "parent":"1348"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1351
+      , "parent":"1348"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1352
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1353
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM11"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1354
+      , "parent":"1348"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1355
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM11 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<11>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM12"
+      , "id":1356
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM12 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM12"
+          , "id":1358
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x180000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1357
+      , "parent":"1356"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1359
+      , "parent":"1356"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1360
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1361
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM12"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1362
+      , "parent":"1356"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1363
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM12 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<12>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM13"
+      , "id":1364
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM13 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM13"
+          , "id":1366
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x1a0000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1365
+      , "parent":"1364"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1367
+      , "parent":"1364"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1368
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1369
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM13"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1370
+      , "parent":"1364"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1371
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM13 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<13>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM14"
+      , "id":1372
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM14 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM14"
+          , "id":1374
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x1c0000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1373
+      , "parent":"1372"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1375
+      , "parent":"1372"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1376
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1377
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM14"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1378
+      , "parent":"1372"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1379
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM14 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<14>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM15"
+      , "id":1380
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM15 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM15"
+          , "id":1382
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x1e0000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1381
+      , "parent":"1380"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1383
+      , "parent":"1380"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1384
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1385
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM15"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1386
+      , "parent":"1380"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1387
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM15 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<15>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM16"
+      , "id":1388
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM16 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM16"
+          , "id":1390
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x200000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1389
+      , "parent":"1388"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1391
+      , "parent":"1388"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1392
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1393
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM16"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1394
+      , "parent":"1388"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1395
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM16 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<16>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM17"
+      , "id":1396
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM17 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM17"
+          , "id":1398
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x220000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1397
+      , "parent":"1396"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1399
+      , "parent":"1396"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1400
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1401
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM17"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1402
+      , "parent":"1396"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1403
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM17 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<17>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM18"
+      , "id":1404
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM18 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM18"
+          , "id":1406
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x240000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1405
+      , "parent":"1404"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1407
+      , "parent":"1404"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1408
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1409
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM18"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1410
+      , "parent":"1404"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1411
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM18 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<18>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM19"
+      , "id":1412
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM19 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM19"
+          , "id":1414
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x260000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1413
+      , "parent":"1412"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1415
+      , "parent":"1412"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1416
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1417
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM19"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1418
+      , "parent":"1412"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1419
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM19 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<19>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM20"
+      , "id":1420
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM20 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM20"
+          , "id":1422
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x280000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1421
+      , "parent":"1420"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1423
+      , "parent":"1420"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1424
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1425
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM20"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1426
+      , "parent":"1420"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1427
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM20 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<20>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM21"
+      , "id":1428
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM21 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM21"
+          , "id":1430
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x2a0000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1429
+      , "parent":"1428"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1431
+      , "parent":"1428"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1432
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1433
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM21"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1434
+      , "parent":"1428"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1435
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM21 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<21>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM22"
+      , "id":1436
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM22 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM22"
+          , "id":1438
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x2c0000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1437
+      , "parent":"1436"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1439
+      , "parent":"1436"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1440
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1441
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM22"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1442
+      , "parent":"1436"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1443
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM22 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<22>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM23"
+      , "id":1444
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM23 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM23"
+          , "id":1446
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x2e0000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1445
+      , "parent":"1444"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1447
+      , "parent":"1444"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1448
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1449
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM23"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1450
+      , "parent":"1444"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1451
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM23 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<23>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM24"
+      , "id":1452
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM24 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM24"
+          , "id":1454
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x300000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1453
+      , "parent":"1452"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1455
+      , "parent":"1452"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1456
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1457
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM24"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1458
+      , "parent":"1452"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1459
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM24 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<24>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM25"
+      , "id":1460
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM25 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM25"
+          , "id":1462
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x320000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1461
+      , "parent":"1460"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1463
+      , "parent":"1460"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1464
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1465
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM25"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1466
+      , "parent":"1460"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1467
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM25 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<25>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM26"
+      , "id":1468
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM26 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM26"
+          , "id":1470
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x340000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1469
+      , "parent":"1468"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1471
+      , "parent":"1468"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1472
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1473
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM26"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1474
+      , "parent":"1468"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1475
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM26 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<26>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM27"
+      , "id":1476
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM27 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM27"
+          , "id":1478
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x360000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1477
+      , "parent":"1476"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1479
+      , "parent":"1476"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1480
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1481
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM27"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1482
+      , "parent":"1476"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1483
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM27 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<27>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM28"
+      , "id":1484
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM28 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM28"
+          , "id":1486
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x380000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1485
+      , "parent":"1484"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1487
+      , "parent":"1484"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1488
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1489
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM28"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1490
+      , "parent":"1484"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1491
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM28 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<28>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM29"
+      , "id":1492
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM29 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM29"
+          , "id":1494
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x3a0000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1493
+      , "parent":"1492"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1495
+      , "parent":"1492"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1496
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1497
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM29"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1498
+      , "parent":"1492"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1499
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM29 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<29>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM30"
+      , "id":1500
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM30 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM30"
+          , "id":1502
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x3c0000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1501
+      , "parent":"1500"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1503
+      , "parent":"1500"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1504
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1505
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM30"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1506
+      , "parent":"1500"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1507
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM30 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<30>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"HBM31"
+      , "id":1508
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Board Supports Interleaving":"Yes"
+          , "Interleave Size":"512 MBs"
+          , "Channels":"1 channel"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+          , "Channel HBM31 Width (bits)":"256"
+        }
+      ]
+      , "type":"memsys"
+      , "children":
+      [
+        {
+          "name":"HBM31"
+          , "id":1510
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data Width":"256"
+              , "Address Width":"29"
+              , "Latency":"240"
+              , "ReadWrite Mode":"Read/Write"
+              , "Maximum Burst":"16"
+              , "Wait Request":"0"
+              , "Start Address":"0x3e0000000"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Memory Controller"
+      , "id":1509
+      , "parent":"1508"
+      , "bw":"12800.00"
+      , "num_channels":"1"
+      , "interleave":"1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Maximum bandwidth the BSP can deliver":"12800.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"
+        }
+      ]
+      , "type":"bb"
+    }
+    , {
+      "name":"Global Memory Interconnect"
+      , "id":1511
+      , "parent":"1508"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"SHARE"
+          , "id":1512
+          , "type":"arb"
+        }
+        , {
+          "name":"Write Interconnect"
+          , "id":1513
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Name":"HBM31"
+              , "Interconnect Style":"ring"
+              , "Writes":"1"
+              , "User specified force-single-store-ring flag":"False"
+              , "Store Rings":"1"
+            }
+          ]
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"Global Memory Stores"
+      , "id":1514
+      , "parent":"1508"
+      , "type":"bb"
+      , "children":
+      [
+        {
+          "name":"ST"
+          , "id":1515
+          , "kwidth":"256"
+          , "mwidth":"256"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Start Cycle":"9"
+              , "Latency":"2 cycles"
+              , "Width":"256 bits"
+              , "HBM31 Width":"256 bits"
+              , "Uses Write Ack":"No"
+              , "LSU Style":"BURST-COALESCED"
+              , "Kernel":"ConsumerKernel<31>"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":79
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":1240
+      , "to":1239
+    }
+    , {
+      "from":1239
+      , "to":1240
+    }
+    , {
+      "from":1243
+      , "to":1242
+    }
+    , {
+      "from":1242
+      , "to":1239
+    }
+    , {
+      "from":1245
+      , "to":1243
+    }
+    , {
+      "from":1248
+      , "to":1247
+    }
+    , {
+      "from":1247
+      , "to":1248
+    }
+    , {
+      "from":1251
+      , "to":1250
+    }
+    , {
+      "from":1250
+      , "to":1247
+    }
+    , {
+      "from":1253
+      , "to":1251
+    }
+    , {
+      "from":1254
+      , "to":1251
+    }
+    , {
+      "from":1255
+      , "to":1251
+    }
+    , {
+      "from":1256
+      , "to":1251
+    }
+    , {
+      "from":1257
+      , "to":1251
+    }
+    , {
+      "from":1258
+      , "to":1251
+    }
+    , {
+      "from":1259
+      , "to":1251
+    }
+    , {
+      "from":1260
+      , "to":1251
+    }
+    , {
+      "from":1261
+      , "to":1251
+    }
+    , {
+      "from":1262
+      , "to":1251
+    }
+    , {
+      "from":1263
+      , "to":1251
+    }
+    , {
+      "from":1266
+      , "to":1265
+    }
+    , {
+      "from":1265
+      , "to":1266
+    }
+    , {
+      "from":1269
+      , "to":1268
+    }
+    , {
+      "from":1268
+      , "to":1265
+    }
+    , {
+      "from":1271
+      , "to":1269
+    }
+    , {
+      "from":1272
+      , "to":1269
+    }
+    , {
+      "from":1273
+      , "to":1269
+    }
+    , {
+      "from":1274
+      , "to":1269
+    }
+    , {
+      "from":1275
+      , "to":1269
+    }
+    , {
+      "from":1276
+      , "to":1269
+    }
+    , {
+      "from":1277
+      , "to":1269
+    }
+    , {
+      "from":1278
+      , "to":1269
+    }
+    , {
+      "from":1279
+      , "to":1269
+    }
+    , {
+      "from":1280
+      , "to":1269
+    }
+    , {
+      "from":1281
+      , "to":1269
+    }
+    , {
+      "from":1284
+      , "to":1283
+    }
+    , {
+      "from":1283
+      , "to":1284
+    }
+    , {
+      "from":1287
+      , "to":1286
+    }
+    , {
+      "from":1286
+      , "to":1283
+    }
+    , {
+      "from":1289
+      , "to":1287
+    }
+    , {
+      "from":1290
+      , "to":1287
+    }
+    , {
+      "from":1291
+      , "to":1287
+    }
+    , {
+      "from":1294
+      , "to":1293
+    }
+    , {
+      "from":1293
+      , "to":1294
+    }
+    , {
+      "from":1297
+      , "to":1296
+    }
+    , {
+      "from":1296
+      , "to":1293
+    }
+    , {
+      "from":1299
+      , "to":1297
+    }
+    , {
+      "from":1302
+      , "to":1301
+    }
+    , {
+      "from":1301
+      , "to":1302
+    }
+    , {
+      "from":1305
+      , "to":1304
+    }
+    , {
+      "from":1304
+      , "to":1301
+    }
+    , {
+      "from":1307
+      , "to":1305
+    }
+    , {
+      "from":1310
+      , "to":1309
+    }
+    , {
+      "from":1309
+      , "to":1310
+    }
+    , {
+      "from":1313
+      , "to":1312
+    }
+    , {
+      "from":1312
+      , "to":1309
+    }
+    , {
+      "from":1315
+      , "to":1313
+    }
+    , {
+      "from":1318
+      , "to":1317
+    }
+    , {
+      "from":1317
+      , "to":1318
+    }
+    , {
+      "from":1321
+      , "to":1320
+    }
+    , {
+      "from":1320
+      , "to":1317
+    }
+    , {
+      "from":1323
+      , "to":1321
+    }
+    , {
+      "from":1326
+      , "to":1325
+    }
+    , {
+      "from":1325
+      , "to":1326
+    }
+    , {
+      "from":1329
+      , "to":1328
+    }
+    , {
+      "from":1328
+      , "to":1325
+    }
+    , {
+      "from":1331
+      , "to":1329
+    }
+    , {
+      "from":1334
+      , "to":1333
+    }
+    , {
+      "from":1333
+      , "to":1334
+    }
+    , {
+      "from":1337
+      , "to":1336
+    }
+    , {
+      "from":1336
+      , "to":1333
+    }
+    , {
+      "from":1339
+      , "to":1337
+    }
+    , {
+      "from":1342
+      , "to":1341
+    }
+    , {
+      "from":1341
+      , "to":1342
+    }
+    , {
+      "from":1345
+      , "to":1344
+    }
+    , {
+      "from":1344
+      , "to":1341
+    }
+    , {
+      "from":1347
+      , "to":1345
+    }
+    , {
+      "from":1350
+      , "to":1349
+    }
+    , {
+      "from":1349
+      , "to":1350
+    }
+    , {
+      "from":1353
+      , "to":1352
+    }
+    , {
+      "from":1352
+      , "to":1349
+    }
+    , {
+      "from":1355
+      , "to":1353
+    }
+    , {
+      "from":1358
+      , "to":1357
+    }
+    , {
+      "from":1357
+      , "to":1358
+    }
+    , {
+      "from":1361
+      , "to":1360
+    }
+    , {
+      "from":1360
+      , "to":1357
+    }
+    , {
+      "from":1363
+      , "to":1361
+    }
+    , {
+      "from":1366
+      , "to":1365
+    }
+    , {
+      "from":1365
+      , "to":1366
+    }
+    , {
+      "from":1369
+      , "to":1368
+    }
+    , {
+      "from":1368
+      , "to":1365
+    }
+    , {
+      "from":1371
+      , "to":1369
+    }
+    , {
+      "from":1374
+      , "to":1373
+    }
+    , {
+      "from":1373
+      , "to":1374
+    }
+    , {
+      "from":1377
+      , "to":1376
+    }
+    , {
+      "from":1376
+      , "to":1373
+    }
+    , {
+      "from":1379
+      , "to":1377
+    }
+    , {
+      "from":1382
+      , "to":1381
+    }
+    , {
+      "from":1381
+      , "to":1382
+    }
+    , {
+      "from":1385
+      , "to":1384
+    }
+    , {
+      "from":1384
+      , "to":1381
+    }
+    , {
+      "from":1387
+      , "to":1385
+    }
+    , {
+      "from":1390
+      , "to":1389
+    }
+    , {
+      "from":1389
+      , "to":1390
+    }
+    , {
+      "from":1393
+      , "to":1392
+    }
+    , {
+      "from":1392
+      , "to":1389
+    }
+    , {
+      "from":1395
+      , "to":1393
+    }
+    , {
+      "from":1398
+      , "to":1397
+    }
+    , {
+      "from":1397
+      , "to":1398
+    }
+    , {
+      "from":1401
+      , "to":1400
+    }
+    , {
+      "from":1400
+      , "to":1397
+    }
+    , {
+      "from":1403
+      , "to":1401
+    }
+    , {
+      "from":1406
+      , "to":1405
+    }
+    , {
+      "from":1405
+      , "to":1406
+    }
+    , {
+      "from":1409
+      , "to":1408
+    }
+    , {
+      "from":1408
+      , "to":1405
+    }
+    , {
+      "from":1411
+      , "to":1409
+    }
+    , {
+      "from":1414
+      , "to":1413
+    }
+    , {
+      "from":1413
+      , "to":1414
+    }
+    , {
+      "from":1417
+      , "to":1416
+    }
+    , {
+      "from":1416
+      , "to":1413
+    }
+    , {
+      "from":1419
+      , "to":1417
+    }
+    , {
+      "from":1422
+      , "to":1421
+    }
+    , {
+      "from":1421
+      , "to":1422
+    }
+    , {
+      "from":1425
+      , "to":1424
+    }
+    , {
+      "from":1424
+      , "to":1421
+    }
+    , {
+      "from":1427
+      , "to":1425
+    }
+    , {
+      "from":1430
+      , "to":1429
+    }
+    , {
+      "from":1429
+      , "to":1430
+    }
+    , {
+      "from":1433
+      , "to":1432
+    }
+    , {
+      "from":1432
+      , "to":1429
+    }
+    , {
+      "from":1435
+      , "to":1433
+    }
+    , {
+      "from":1438
+      , "to":1437
+    }
+    , {
+      "from":1437
+      , "to":1438
+    }
+    , {
+      "from":1441
+      , "to":1440
+    }
+    , {
+      "from":1440
+      , "to":1437
+    }
+    , {
+      "from":1443
+      , "to":1441
+    }
+    , {
+      "from":1446
+      , "to":1445
+    }
+    , {
+      "from":1445
+      , "to":1446
+    }
+    , {
+      "from":1449
+      , "to":1448
+    }
+    , {
+      "from":1448
+      , "to":1445
+    }
+    , {
+      "from":1451
+      , "to":1449
+    }
+    , {
+      "from":1454
+      , "to":1453
+    }
+    , {
+      "from":1453
+      , "to":1454
+    }
+    , {
+      "from":1457
+      , "to":1456
+    }
+    , {
+      "from":1456
+      , "to":1453
+    }
+    , {
+      "from":1459
+      , "to":1457
+    }
+    , {
+      "from":1462
+      , "to":1461
+    }
+    , {
+      "from":1461
+      , "to":1462
+    }
+    , {
+      "from":1465
+      , "to":1464
+    }
+    , {
+      "from":1464
+      , "to":1461
+    }
+    , {
+      "from":1467
+      , "to":1465
+    }
+    , {
+      "from":1470
+      , "to":1469
+    }
+    , {
+      "from":1469
+      , "to":1470
+    }
+    , {
+      "from":1473
+      , "to":1472
+    }
+    , {
+      "from":1472
+      , "to":1469
+    }
+    , {
+      "from":1475
+      , "to":1473
+    }
+    , {
+      "from":1478
+      , "to":1477
+    }
+    , {
+      "from":1477
+      , "to":1478
+    }
+    , {
+      "from":1481
+      , "to":1480
+    }
+    , {
+      "from":1480
+      , "to":1477
+    }
+    , {
+      "from":1483
+      , "to":1481
+    }
+    , {
+      "from":1486
+      , "to":1485
+    }
+    , {
+      "from":1485
+      , "to":1486
+    }
+    , {
+      "from":1489
+      , "to":1488
+    }
+    , {
+      "from":1488
+      , "to":1485
+    }
+    , {
+      "from":1491
+      , "to":1489
+    }
+    , {
+      "from":1494
+      , "to":1493
+    }
+    , {
+      "from":1493
+      , "to":1494
+    }
+    , {
+      "from":1497
+      , "to":1496
+    }
+    , {
+      "from":1496
+      , "to":1493
+    }
+    , {
+      "from":1499
+      , "to":1497
+    }
+    , {
+      "from":1502
+      , "to":1501
+    }
+    , {
+      "from":1501
+      , "to":1502
+    }
+    , {
+      "from":1505
+      , "to":1504
+    }
+    , {
+      "from":1504
+      , "to":1501
+    }
+    , {
+      "from":1507
+      , "to":1505
+    }
+    , {
+      "from":1510
+      , "to":1509
+    }
+    , {
+      "from":1509
+      , "to":1510
+    }
+    , {
+      "from":1513
+      , "to":1512
+    }
+    , {
+      "from":1512
+      , "to":1509
+    }
+    , {
+      "from":1515
+      , "to":1513
+    }
+  ]
+}

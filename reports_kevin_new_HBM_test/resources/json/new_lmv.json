@@ -1,0 +1,2472 @@
+{
+  "nodes":
+  [
+    {
+      "name":"ConsumerKernel<31>"
+      , "id":1110
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1111
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1112
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1113
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<30>"
+      , "id":1114
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1115
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1116
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1117
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<29>"
+      , "id":1118
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1119
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1120
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1121
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<28>"
+      , "id":1122
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1123
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1124
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1125
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<27>"
+      , "id":1126
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1127
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1128
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1129
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<26>"
+      , "id":1130
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1131
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1132
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1133
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<25>"
+      , "id":1134
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1135
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1136
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1137
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<24>"
+      , "id":1138
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1139
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1140
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1141
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<23>"
+      , "id":1142
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1143
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1144
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1145
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<22>"
+      , "id":1146
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1147
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1148
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1149
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<21>"
+      , "id":1150
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1151
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1152
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1153
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<20>"
+      , "id":1154
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1155
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1156
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1157
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<19>"
+      , "id":1158
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1159
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1160
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1161
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<18>"
+      , "id":1162
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1163
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1164
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1165
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<17>"
+      , "id":1166
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1167
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1168
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1169
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<16>"
+      , "id":1170
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1171
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1172
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1173
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<15>"
+      , "id":1174
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1175
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1176
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1177
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<14>"
+      , "id":1178
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1179
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1180
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1181
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<13>"
+      , "id":1182
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1183
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1184
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1185
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<12>"
+      , "id":1186
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1187
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1188
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1189
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<11>"
+      , "id":1190
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1191
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1192
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1193
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<10>"
+      , "id":1194
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1195
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1196
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1197
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<9>"
+      , "id":1198
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1199
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1200
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1201
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<8>"
+      , "id":1202
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1203
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1204
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1205
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<7>"
+      , "id":1206
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1207
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1208
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1209
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<6>"
+      , "id":1210
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1211
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1212
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1213
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<5>"
+      , "id":1214
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1215
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1216
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1217
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<4>"
+      , "id":1218
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1219
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1220
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1221
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<3>"
+      , "id":1222
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1223
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1224
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1225
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<2>"
+      , "id":1226
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1227
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1228
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1229
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<1>"
+      , "id":1230
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1231
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1232
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1233
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerKernel<0>"
+      , "id":1234
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"On-chip Memory"
+          , "id":1235
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_bank_acc"
+              , "id":1236
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"__SYCLKernel"
+              , "id":1237
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

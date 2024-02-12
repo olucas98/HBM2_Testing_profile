@@ -1,0 +1,3751 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Speculated iterations", "Details"]
+  , "children":
+  [
+    {
+      "name":"Kernel: ConsumerKernel<31>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<31>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<30>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<30>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<29>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<29>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<28>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<28>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<27>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<27>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<26>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<26>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<25>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<25>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<24>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<24>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<23>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<23>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<22>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<22>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<21>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<21>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<20>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<20>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<19>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<19>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<18>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<18>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<17>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<17>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<16>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<16>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<15>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<15>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<14>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<14>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<13>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<13>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<12>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<12>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<11>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<11>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<10>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<10>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<9>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<9>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<8>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<8>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<7>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<7>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<6>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<6>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<5>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<5>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<4>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<4>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<3>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<3>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<2>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<2>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<1>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<1>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: ConsumerKernel<0>"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+            , "line":77
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"fMAX bottleneck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"FPGA Optimization Guide : Single Work-item Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/single-work-item-kernels.html"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ConsumerKernel<0>.B1"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instruction:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Store Operation (%L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/opt/intel/oneapi/compiler/2023.2.1/linux/bin-llvm/../include/sycl/handler.hpp"
+                      , "line":"1211"
+                    }
+                    , {
+                      "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                      , "line":"79"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Average Trip count: 15728640 (exact)"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"FPGA Optimization Guide : Loops"
+                  , "link":"https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/current/loops.html"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+  ]
+}

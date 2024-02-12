@@ -1,0 +1,4373 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"Global variable"
+      , "id":1078
+      , "src":"265"
+      , "dst":"277"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<31>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":265
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi31EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":272
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":276
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":277
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi31EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":265
+          , "to":276
+        }
+        , {
+          "from":276
+          , "to":277
+        }
+        , {
+          "from":265
+          , "to":277
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1079
+      , "src":"286"
+      , "dst":"298"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<30>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":286
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi30EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":293
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":297
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":298
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi30EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":286
+          , "to":297
+        }
+        , {
+          "from":297
+          , "to":298
+        }
+        , {
+          "from":286
+          , "to":298
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1080
+      , "src":"307"
+      , "dst":"319"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<29>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":307
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi29EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":314
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":318
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":319
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi29EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":307
+          , "to":318
+        }
+        , {
+          "from":318
+          , "to":319
+        }
+        , {
+          "from":307
+          , "to":319
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1081
+      , "src":"328"
+      , "dst":"340"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<28>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":328
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi28EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":335
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":339
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":340
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi28EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":328
+          , "to":339
+        }
+        , {
+          "from":339
+          , "to":340
+        }
+        , {
+          "from":328
+          , "to":340
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1082
+      , "src":"349"
+      , "dst":"361"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<27>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":349
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi27EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":356
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":360
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":361
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi27EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":349
+          , "to":360
+        }
+        , {
+          "from":360
+          , "to":361
+        }
+        , {
+          "from":349
+          , "to":361
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1083
+      , "src":"370"
+      , "dst":"382"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<26>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":370
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi26EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":377
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":381
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":382
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi26EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":370
+          , "to":381
+        }
+        , {
+          "from":381
+          , "to":382
+        }
+        , {
+          "from":370
+          , "to":382
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1084
+      , "src":"391"
+      , "dst":"403"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<25>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":391
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi25EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":398
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":402
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":403
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi25EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":391
+          , "to":402
+        }
+        , {
+          "from":402
+          , "to":403
+        }
+        , {
+          "from":391
+          , "to":403
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1085
+      , "src":"412"
+      , "dst":"424"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<24>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":412
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi24EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":419
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":423
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":424
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi24EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":412
+          , "to":423
+        }
+        , {
+          "from":423
+          , "to":424
+        }
+        , {
+          "from":412
+          , "to":424
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1086
+      , "src":"433"
+      , "dst":"445"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<23>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":433
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi23EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":440
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":444
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":445
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi23EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":433
+          , "to":444
+        }
+        , {
+          "from":444
+          , "to":445
+        }
+        , {
+          "from":433
+          , "to":445
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1087
+      , "src":"454"
+      , "dst":"466"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<22>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":454
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi22EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":461
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":465
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":466
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi22EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":454
+          , "to":465
+        }
+        , {
+          "from":465
+          , "to":466
+        }
+        , {
+          "from":454
+          , "to":466
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1088
+      , "src":"475"
+      , "dst":"487"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<21>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":475
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi21EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":482
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":486
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":487
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi21EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":475
+          , "to":486
+        }
+        , {
+          "from":486
+          , "to":487
+        }
+        , {
+          "from":475
+          , "to":487
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1089
+      , "src":"496"
+      , "dst":"508"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<20>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":496
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi20EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":503
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":507
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":508
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi20EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":496
+          , "to":507
+        }
+        , {
+          "from":507
+          , "to":508
+        }
+        , {
+          "from":496
+          , "to":508
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1090
+      , "src":"517"
+      , "dst":"529"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<19>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":517
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi19EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":528
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":524
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":529
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi19EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":517
+          , "to":528
+        }
+        , {
+          "from":528
+          , "to":529
+        }
+        , {
+          "from":517
+          , "to":529
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1091
+      , "src":"538"
+      , "dst":"550"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<18>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":538
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi18EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":545
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":549
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":550
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi18EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":538
+          , "to":549
+        }
+        , {
+          "from":549
+          , "to":550
+        }
+        , {
+          "from":538
+          , "to":550
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1092
+      , "src":"559"
+      , "dst":"571"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<17>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":559
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi17EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":570
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":566
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":571
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi17EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":559
+          , "to":570
+        }
+        , {
+          "from":570
+          , "to":571
+        }
+        , {
+          "from":559
+          , "to":571
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1093
+      , "src":"580"
+      , "dst":"592"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<16>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":580
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi16EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":587
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":591
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":592
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi16EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":580
+          , "to":591
+        }
+        , {
+          "from":591
+          , "to":592
+        }
+        , {
+          "from":580
+          , "to":592
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1094
+      , "src":"601"
+      , "dst":"613"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<15>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":601
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi15EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":612
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":608
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":613
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi15EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":601
+          , "to":612
+        }
+        , {
+          "from":612
+          , "to":613
+        }
+        , {
+          "from":601
+          , "to":613
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1095
+      , "src":"622"
+      , "dst":"634"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<14>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":622
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi14EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":629
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":633
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":634
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi14EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":622
+          , "to":633
+        }
+        , {
+          "from":633
+          , "to":634
+        }
+        , {
+          "from":622
+          , "to":634
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1096
+      , "src":"643"
+      , "dst":"655"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<13>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":643
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi13EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":650
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":654
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":655
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi13EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":643
+          , "to":654
+        }
+        , {
+          "from":654
+          , "to":655
+        }
+        , {
+          "from":643
+          , "to":655
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1097
+      , "src":"664"
+      , "dst":"676"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<12>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":664
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi12EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":671
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":675
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":676
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi12EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":664
+          , "to":675
+        }
+        , {
+          "from":675
+          , "to":676
+        }
+        , {
+          "from":664
+          , "to":676
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1098
+      , "src":"685"
+      , "dst":"697"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<11>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":685
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi11EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":692
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":696
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":697
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi11EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":685
+          , "to":696
+        }
+        , {
+          "from":696
+          , "to":697
+        }
+        , {
+          "from":685
+          , "to":697
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1099
+      , "src":"706"
+      , "dst":"718"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<10>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":706
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi10EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":717
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":713
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":718
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi10EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":706
+          , "to":717
+        }
+        , {
+          "from":717
+          , "to":718
+        }
+        , {
+          "from":706
+          , "to":718
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1100
+      , "src":"727"
+      , "dst":"736"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<9>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":727
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi9EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":737
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":733
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":736
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi9EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":737
+          , "to":737
+        }
+        , {
+          "from":727
+          , "to":733
+        }
+        , {
+          "from":733
+          , "to":736
+        }
+        , {
+          "from":727
+          , "to":736
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1101
+      , "src":"746"
+      , "dst":"758"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<8>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":746
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi8EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":753
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":757
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":758
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi8EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":746
+          , "to":757
+        }
+        , {
+          "from":757
+          , "to":758
+        }
+        , {
+          "from":746
+          , "to":758
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1102
+      , "src":"767"
+      , "dst":"779"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<7>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":767
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi7EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":778
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":774
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":779
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi7EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":767
+          , "to":778
+        }
+        , {
+          "from":778
+          , "to":779
+        }
+        , {
+          "from":767
+          , "to":779
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1103
+      , "src":"788"
+      , "dst":"800"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<6>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":788
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi6EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":799
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":795
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":800
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi6EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":788
+          , "to":799
+        }
+        , {
+          "from":799
+          , "to":800
+        }
+        , {
+          "from":788
+          , "to":800
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1104
+      , "src":"809"
+      , "dst":"821"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<5>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":809
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi5EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":816
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":820
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":821
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi5EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":809
+          , "to":820
+        }
+        , {
+          "from":820
+          , "to":821
+        }
+        , {
+          "from":809
+          , "to":821
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1105
+      , "src":"830"
+      , "dst":"842"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<4>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":830
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi4EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":837
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":841
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":842
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi4EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":830
+          , "to":841
+        }
+        , {
+          "from":841
+          , "to":842
+        }
+        , {
+          "from":830
+          , "to":842
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1106
+      , "src":"851"
+      , "dst":"860"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<3>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":851
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi3EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":857
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":861
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":860
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi3EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":851
+          , "to":857
+        }
+        , {
+          "from":861
+          , "to":861
+        }
+        , {
+          "from":857
+          , "to":860
+        }
+        , {
+          "from":851
+          , "to":860
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1107
+      , "src":"870"
+      , "dst":"879"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<2>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":870
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi2EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":876
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":880
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":879
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi2EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":870
+          , "to":876
+        }
+        , {
+          "from":880
+          , "to":880
+        }
+        , {
+          "from":876
+          , "to":879
+        }
+        , {
+          "from":870
+          , "to":879
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1108
+      , "src":"889"
+      , "dst":"898"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<1>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":889
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi1EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":895
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":899
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":898
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi1EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":889
+          , "to":895
+        }
+        , {
+          "from":899
+          , "to":899
+        }
+        , {
+          "from":895
+          , "to":898
+        }
+        , {
+          "from":889
+          , "to":898
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"Global variable"
+      , "id":1109
+      , "src":"908"
+      , "dst":"920"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"ConsumerKernel<0>.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"480.0"
+          , "Loop feedback path that raised II and/or lowered fMAX: ":
+          [
+            {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"+(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                  , "line":"78"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":908
+          , "start":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi0EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":919
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"+"
+          , "id":915
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":920
+          , "end":"4.00"
+          , "parent":"_ZTS14ConsumerKernelILi0EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/ihome/ageorge/opl1/Documents/k_mers/kmer_testing/./src/kevin_new_HBM_test.cpp"
+                , "line":78
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":908
+          , "to":919
+        }
+        , {
+          "from":919
+          , "to":920
+        }
+        , {
+          "from":908
+          , "to":920
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}

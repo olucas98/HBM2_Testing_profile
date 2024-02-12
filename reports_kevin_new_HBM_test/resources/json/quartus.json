@@ -1,0 +1,322 @@
+{
+    "quartusFitClockSummary"         : {
+        "nodes" : [{
+            "name"              : "Quartus Fitter: Clock Frequency (MHz)",
+            "kernel clock"      : "390.00",
+            "kernel clock fmax" : "391.08",
+            "clock1x"           : "391.08",
+            "details"           : [{
+                "text" : "The actual frequency of kernel clock is 390.00 MHz after platform PLL adjustment. The maximum frequency for kernel clock is 391.08 MHz. "
+            }],
+            "type"              : "system"
+        }]
+    },
+    "quartusFitResourceUsageSummary" : {
+        "nodes" : [{
+            "type" : "system",
+            "id"   : "1000",
+            "name" : "Quartus Fitter: Kernel System",
+            "alm"  : "62314.7",
+            "reg"  : "167788",
+            "dsp"  : "0",
+            "ram"  : "292",
+            "mlab" : "485"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi0EE",
+            "alm"  : "1625.3",
+            "reg"  : "4130",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi10EE",
+            "alm"  : "1616.4",
+            "reg"  : "4030",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi11EE",
+            "alm"  : "1620.1",
+            "reg"  : "4028",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi12EE",
+            "alm"  : "1626.3",
+            "reg"  : "3966",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi13EE",
+            "alm"  : "1625.9",
+            "reg"  : "3962",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi14EE",
+            "alm"  : "1622.4",
+            "reg"  : "3905",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi15EE",
+            "alm"  : "1627.4",
+            "reg"  : "4008",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi16EE",
+            "alm"  : "1625.7",
+            "reg"  : "4035",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi17EE",
+            "alm"  : "1622.1",
+            "reg"  : "4022",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi18EE",
+            "alm"  : "1625.8",
+            "reg"  : "4013",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi19EE",
+            "alm"  : "1628.6",
+            "reg"  : "4037",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi1EE",
+            "alm"  : "1622.3",
+            "reg"  : "4061",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi20EE",
+            "alm"  : "1619.3",
+            "reg"  : "4277",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi21EE",
+            "alm"  : "1624.0",
+            "reg"  : "3985",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi22EE",
+            "alm"  : "1622.8",
+            "reg"  : "3974",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi23EE",
+            "alm"  : "1614.5",
+            "reg"  : "4001",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi24EE",
+            "alm"  : "1628.7",
+            "reg"  : "3919",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi25EE",
+            "alm"  : "1619.8",
+            "reg"  : "3861",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi26EE",
+            "alm"  : "1618.1",
+            "reg"  : "4032",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi27EE",
+            "alm"  : "1618.7",
+            "reg"  : "3945",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi28EE",
+            "alm"  : "1615.1",
+            "reg"  : "4007",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi29EE",
+            "alm"  : "1623.0",
+            "reg"  : "3960",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi2EE",
+            "alm"  : "1625.4",
+            "reg"  : "4157",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi30EE",
+            "alm"  : "1620.6",
+            "reg"  : "3954",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi31EE",
+            "alm"  : "1627.1",
+            "reg"  : "3996",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi3EE",
+            "alm"  : "1623.9",
+            "reg"  : "3941",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi4EE",
+            "alm"  : "1626.4",
+            "reg"  : "4054",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi5EE",
+            "alm"  : "1622.3",
+            "reg"  : "3928",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi6EE",
+            "alm"  : "1624.2",
+            "reg"  : "4021",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi7EE",
+            "alm"  : "1624.7",
+            "reg"  : "3937",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi8EE",
+            "alm"  : "1625.2",
+            "reg"  : "3907",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "kernel",
+            "id"   : "1010",
+            "name" : "ZTS14ConsumerKernelILi9EE",
+            "alm"  : "1625.1",
+            "reg"  : "3955",
+            "dsp"  : "0",
+            "ram"  : "9",
+            "mlab" : "15"
+        },{
+            "type" : "aclsystem",
+            "id"   : "1001",
+            "name" : "Quartus Fitter: Total Used (Entire System)",
+            "alm"  : "285,470",
+            "reg"  : "537,667",
+            "dsp"  : "0",
+            "ram"  : "1,560"
+        }]
+    }
+}
